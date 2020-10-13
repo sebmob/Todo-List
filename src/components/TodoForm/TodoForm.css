@@ -7,16 +7,39 @@
     margin-top: 20px;
     padding: 10px;
     background-color: lightgray;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .input--submit {
-    margin: 10px;
+    margin: 20px;
+    border: 0;
+    outline: 0;
+    font-size: 1.2em;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    border-radius: 20px;
+}
+
+.input--submit:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: lightgray;
+    color: #333;
 }
 
 .input--text {
     margin: 10px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #333;
+    background-color: lightgray;
+    font-size: 1.2em;
+    margin: 20px;
 }
 
 .form--label {
     text-align: center;
+    margin: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
 }

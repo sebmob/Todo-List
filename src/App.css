@@ -1,6 +1,12 @@
+body {
+    background: linear-gradient(90deg, rgba(53,52,74,1) 0%, rgba(76,76,97,1) 35%, rgba(192,210,214,1) 100%);
+}
+
 .header {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background: linear-gradient(90deg, rgba(194,194,201,1) 0%, rgba(123,123,157,1) 36%, rgba(200,201,201,1) 100%);
     color: white;
+    border-bottom: blurred;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
