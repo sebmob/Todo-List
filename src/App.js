@@ -5,25 +5,24 @@ import TodoList from './components/TodoList/TodoList';
 
 function App() {
 
-  const [userInput, setUserInput ] = useState('');
+  const [ userInput, setUserInput ] = useState('');
   const [ todos, setTodos ] = useState([]);
 
-  const handleChange = (e) => {
-    setUserInput(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    e.target.value = '';
-    setTodos(userInput);
 
 
-  }
+ 
 
   return (
     <div className="App">
-      <TodoForm handleChange={handleChange} handleSubmit={handleSubmit} />
-      <TodoList todos={todos}/>
+      <header className="header">
+        <h1>Todo Or Not Todo, That Is The Question...</h1>
+      </header>
+      <TodoForm 
+      userInput={userInput} 
+      setUserInput={setUserInput} 
+      todos={todos} 
+      setTodos={setTodos} />
+      <TodoList todos={todos} setTodos={setTodos} />
     </div>
   );
 }

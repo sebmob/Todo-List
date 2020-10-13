@@ -1,0 +1,22 @@
+.form--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.input--submit {
+    margin: 10px;
+}
+
+.input--text {
+    margin: 10px;
+}
+
+.form--label {
+    text-align: center;
+}

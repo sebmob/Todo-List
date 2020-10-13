@@ -1,10 +1,12 @@
 import React from 'react'
+import Todo from '../Todo/Todo'
+import './TodoList.css'
 
-function TodoList({ todos }) {
+function TodoList({ todos, setTodos }) {
     return (
-        <div>
+        <div className="todolist--container">
             {todos.map((todo) => {
-               return <h4>{todo}</h4>
+              return <Todo todos={todos} setTodos={setTodos} desc={todo.desc} id={todo.id} />
             })}
         </div>
     )
