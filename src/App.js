@@ -7,7 +7,7 @@ function App() {
 
   const [ userInput, setUserInput ] = useState('');
   const [ todos, setTodos ] = useState([]);
-  const [maxInputLength, setMaxInputLength] = useState(25);
+  const maxInputLength = useState(25);
 
   return (
     <div className="App">
@@ -20,7 +20,6 @@ function App() {
       todos={todos} 
       setTodos={setTodos}
       maxInputLength={maxInputLength}
-      setMaxInputLength={setMaxInputLength}
       />
       <TodoList todos={todos} setTodos={setTodos} />
     </div>

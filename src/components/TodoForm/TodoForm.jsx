@@ -1,9 +1,10 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './TodoForm.css'
 
-function TodoForm({ userInput, todos, setTodos, setUserInput, maxInputLength }) {
+function TodoForm({ userInput, todos, setTodos, setUserInput }) {
+
+    const maxInputLength = 25;
 
     const handleChange = (e) => setUserInput(e.target.value);
 
