@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import './App.css';
 import TodoForm from './components/TodoForm/TodoForm'
 import TodoList from './components/TodoList/TodoList';
@@ -10,10 +7,7 @@ function App() {
 
   const [ userInput, setUserInput ] = useState('');
   const [ todos, setTodos ] = useState([]);
-
-
-
- 
+  const [maxInputLength, setMaxInputLength] = useState(25);
 
   return (
     <div className="App">
@@ -24,11 +18,13 @@ function App() {
       userInput={userInput} 
       setUserInput={setUserInput} 
       todos={todos} 
-      setTodos={setTodos} />
+      setTodos={setTodos}
+      maxInputLength={maxInputLength}
+      setMaxInputLength={setMaxInputLength}
+      />
       <TodoList todos={todos} setTodos={setTodos} />
     </div>
   );
 }
 
 export default App;
-library.add(fab, faCheckSquare, faCoffee)

@@ -25,10 +25,10 @@ function Todo({ todos, setTodos, desc, id, completed }) {
     return (
         <div className={completed ? "todo--container--completed" : "todo--container"}>
             <li className="todo--desc">{desc}</li>
-            <button className="button--checkmark">
+            <button className="button--checkmark" onClick={completeTodo}>
                 <FontAwesomeIcon size='1x' className="icon--checkmark" icon={faCheck} />
             </button>
-            <button className="button--trashcan">
+            <button className="button--trashcan" onClick={deleteTodo}>
                 <FontAwesomeIcon size='1x' className="icon--trashcan" icon={faTrash} />
             </button>                
         </div>

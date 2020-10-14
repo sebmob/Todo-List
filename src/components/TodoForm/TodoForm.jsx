@@ -1,8 +1,9 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './TodoForm.css'
 
-function TodoForm({ userInput, todos, setTodos, setUserInput }) {
+function TodoForm({ userInput, todos, setTodos, setUserInput, maxInputLength }) {
 
     const handleChange = (e) => setUserInput(e.target.value);
 
@@ -17,11 +18,11 @@ function TodoForm({ userInput, todos, setTodos, setUserInput }) {
       }
 
     return (
-        <div >
+        <div className="div--container">
             <form className="form--container">
-                <label className="form--label">Enter Your Todo!</label>
-                <input className="input--text" type="text" placeholder="Todo..." value={userInput} onChange={handleChange}/>
+                <input className="input--text" type="text" maxLength="25" placeholder="Todo..." value={userInput} onChange={handleChange}/>
                 <input className="input--submit" type="submit" value="Submit" onClick={handleSubmit}/>
+                {userInput.length > 0 ? <p className="p--max--length">Characters left: {maxInputLength - userInput.length}</p> : <p className="p--max--length"></p>}
             </form>
         </div>
     )
