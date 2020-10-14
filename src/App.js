@@ -6,8 +6,9 @@ import TodoList from './components/TodoList/TodoList';
 function App() {
 
   const [ userInput, setUserInput ] = useState('');
-  const [ todos, setTodos ] = useState([]);
-  const maxInputLength = useState(25);
+  const [ todos, setTodos ] = useState(
+    JSON.parse(localStorage.getItem('todos') || [])
+    );
 
   return (
     <div className="App">
@@ -19,7 +20,6 @@ function App() {
       setUserInput={setUserInput} 
       todos={todos} 
       setTodos={setTodos}
-      maxInputLength={maxInputLength}
       />
       <TodoList todos={todos} setTodos={setTodos} />
     </div>

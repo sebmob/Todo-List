@@ -1,12 +1,13 @@
 .form--container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     max-width: 400px;
-    margin: auto;
     margin-top: 20px;
     padding: 10px;
     height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
 
 .input--submit {
@@ -18,6 +19,7 @@
     background-color: #333;
     color: white;
     border-radius: 20px;
+    width: 250px;
 }
 
 .input--submit:hover {
@@ -35,6 +37,7 @@
     margin: 20px;
     background-color: transparent;
     color: white;
+    width: 350px;
 }
 
 .input--text::placeholder {
