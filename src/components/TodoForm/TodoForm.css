@@ -1,62 +1,65 @@
 .form--container {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin-top: 20px;
-    padding: 10px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-top: 20px;
+  padding: 10px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
 
 .input--submit {
-    margin: 20px;
-    border: 0;
-    outline: 0;
-    font-size: 1.2em;
-    padding: 5px;
-    background-color: #333;
-    color: white;
-    border-radius: 20px;
-    width: 250px;
+  border: 0;
+  outline: 0;
+  font-size: 1.2em;
+  padding: 5px;
+  background-color: #333;
+  color: white;
+  border-radius: 20px;
+  width: 250px;
 }
 
 .input--submit:hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: lightgray;
-    color: #333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: lightgray;
+  color: #333;
 }
 
 .input--text {
-    margin: 10px;
-    outline: 0;
-    border: 0;
-    border-bottom: 1px solid white;
-    font-size: 1.2em;
-    margin: 20px;
-    background-color: transparent;
-    color: white;
-    width: 350px;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid white;
+  font-size: 1.2em;
+  background-color: transparent;
+  color: white;
+  width: 350px;
 }
 
 .input--text::placeholder {
-    color: white;
+  color: white;
 }
 
 .form--label {
-    text-align: center;
-    margin: 20px;
-    font-size: 1.2em;
-    font-weight: 600;
+  text-align: center;
+  margin: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 .div--container {
-    height: 200px;
+  height: 200px;
 }
 
 .p--max--length {
-    text-align: center;
-    height: 40px;
-    color: white;
+  text-align: center;
+  height: 30px;
+  color: white;
+}
+
+@media (max-width: 400px) {
+  .input--text {
+    width: 250px;
+  }
 }

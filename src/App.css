@@ -1,9 +1,14 @@
 body {
-    background: linear-gradient(90deg, rgba(53,52,74,1) 0%, rgba(76,76,97,1) 35%, rgba(192,210,214,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(53, 52, 74, 1) 0%,
+    rgba(76, 76, 97, 1) 35%,
+    rgba(192, 210, 214, 1) 100%
+  );
 }
 
 .header {
-    text-align: center;
-    padding: 20px;
-    color: white;
+  text-align: center;
+  padding: 20px;
+  color: white;
 }

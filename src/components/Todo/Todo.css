@@ -1,67 +1,75 @@
 .todo--container {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    height: 34px;
-    width: 400px;;
-    margin: 5px;
-    order: 1;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 34px;
+  width: 400px;
+  margin: 5px;
+  order: 1;
 }
 
 .todo--container--completed {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    margin: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    height: 34px;
-    width: 400px;
-    text-decoration: line-through;
-    order: 2;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 34px;
+  width: 400px;
+  text-decoration: line-through;
+  order: 2;
 }
 
 .todo--desc {
-    font-weight: 600;
-    font-size: 1.1em;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 3px;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 3px;
 }
 
 .icon--trashcan {
-    color: white;
-    background-color: inherit;
-
+  color: white;
+  background-color: inherit;
 }
 
 .icon--checkmark {
-    color: white;
-    background-color: inherit;
+  color: white;
+  background-color: inherit;
 }
 
 .button--trashcan {
-    background-color: rgb(233, 104, 104);
-    height: 34px;
-    width: 34px;
-    border: 0;
-    outline: 0;
+  background-color: rgb(233, 104, 104);
+  height: 34px;
+  width: 34px;
+  border: 0;
+  outline: 0;
 }
 
 .button--checkmark {
-    background-color:  rgb(5, 206, 105);
-    height: 34px;
-    width: 34px;
-    border: 0;
-    margin-left: auto;
-    outline: 0;
+  background-color: rgb(5, 206, 105);
+  height: 34px;
+  width: 34px;
+  border: 0;
+  margin-left: auto;
+  outline: 0;
 }
 
 .button--checkmark:hover {
-    background-color: rgb(6, 245, 125);
+  background-color: rgb(6, 245, 125);
 }
 
 .button--trashcan:hover {
-    background-color: rgb(255, 134, 134);
+  background-color: rgb(255, 134, 134);
 }
 
+@media (max-width: 400px) {
+  .todo--container {
+    width: 280px;
+  }
+
+  .todo--container--completed {
+    width: 280px;
+  }
+}
